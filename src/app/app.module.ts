@@ -3,16 +3,42 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { StudentComponent } from './student/student.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { StudentMarksComponent } from './student-marks/student-marks.component';
+import { TreeComponent } from './tree/tree.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { MatTreeModule } from '@angular/material/tree';
+import { TreeDataService } from './tree-data.service';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    StudentComponent,
+    StudentListComponent,
+    StudentDetailsComponent,
+    StudentMarksComponent,
+    TreeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTreeModule,
+    MatIconModule,
+    MatButtonModule,
   ],
-  providers: [],
+  providers: [
+    TreeDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

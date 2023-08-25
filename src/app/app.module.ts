@@ -15,6 +15,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { MatTreeModule } from '@angular/material/tree';
 import { TreeDataService } from './tree-data.service';
+import { LlmComponent } from './llm/llm.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -27,6 +30,7 @@ import { TreeDataService } from './tree-data.service';
     StudentDetailsComponent,
     StudentMarksComponent,
     TreeComponent,
+    LlmComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,8 @@ import { TreeDataService } from './tree-data.service';
     MatTreeModule,
     MatIconModule,
     MatButtonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [
     TreeDataService

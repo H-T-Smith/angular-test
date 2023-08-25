@@ -61,6 +61,12 @@
               ],
               "outputHashing": "all"
             },
+            "fr-CA": {
+              "localize": ["fr-CA"]
+            },
+            "en-US": {
+              "localize": ["en-US"]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -80,9 +86,15 @@
             },
             "development": {
               "browserTarget": "routing-app:build:development"
+            },
+            "fr-CA": {
+              "browserTarget": "routing-app:build:fr-CA"
+            },
+            "en-US": {
+              "browserTarget": "routing-app:build:en-US"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "en-US"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
